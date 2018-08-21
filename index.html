@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ticat Studio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="wrapper-main">
+                <div class="header-left">
+                    <img class="ticat-icon" src="image/ticat.png" />
+                    <div class="title">
+                        <span>TICAT STUDIO</span>
+                        <br>Tập hợp những Instant Game hay nhất trên Facebook</div>
+                </div>
+                <div class="header-right">
+                    <div class="animation-slick">
+                        <img src="./image/display1.png" />
+                        <img src="./image/display2.png" />
+                        <img src="./image/display3.png" />
+                        <img src="./image/display1.png" />
+                        <img src="./image/display2.png" />
+                        <img src="./image/display3.png" />
+                    </div>
+                    <div class="btn_slide controller_next">
+                        <span class="next">
+                            <img src="./image/left_slide.png" />
+                        </span>
+                    </div>
+                    <div class="btn_slide controller_prev">
+                        <span class="prev">
+                            <img src="./image/right_slide.png" />
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="container">
+            <div id="wrapper_main2">
+                <h2>GAME COLLECTION</h2>
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            <img src="./image/A3.jpg" alt="Jane" style="width:100%">
+                            <div class="container-row">
+                                <h2>What does your Tarot card mean?</h2>
+                                <p>
+                                    <button class="button">
+                                        <a href="http://m.me/278821142703388?game=tarot-card">PLAY</a>
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card">
+                            <img src="./image/A2.jpg" alt="Mike" style="width:100%">
+                            <div class="container-row">
+                                <h2>Love Caculation</h2>
+                                <p>
+                                    <button class="button">
+                                        <a href="http://m.me/1772950222758678?game=love-calculator">PLAY</a>
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="./image/A1.jpg" alt="John" style="width:100%">
+                            <div class="container-row">
+                                <h2>Who will heal your heart broken?</h2>
+                                <p>
+                                    <button class="button"><a href="http://m.me/2086887724965963?game=broken-heart">PLAY</a></button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="./image/A6.jpg" alt="John" style="width:100%">
+                            <div class="container-row">
+                                <h2>Ticat_What does your name mean?</h2>
+                                <p>
+                                    <button class="button">PLAY</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="footer">
+          <div id="wrapper_main3">
+              <div class="footer-info wow slideInLeft">
+                  <h1>LIÊN HỆ VỚI CHÚNG TÔI</h1>
+                  <div class="img_socia">
+          <a href="https://www.facebook.com/groups/265038620722454/?fref=nf">
+            <img src="./image/fb.png" />
+          </a>
+          <a href="">
+            <img src="./image/tw.png" />
+          </a>
+          <a href="http://m.me/Triviaplaygame?game=triviaplaynet">
+            <img src="./image/instant.png" />
+          </a>
+                  </div>
+              </div>
+              <div class="footer-ticat wow slideInRight">
+                  <img src="./image/ticat2.png" />
+              </div>
+      <div class="clear"></div>
+          </div>
+
+      </div>
+
+        </div>
+    </div>
+    </div>
+
+</body>
+<script src="./js/jquery-3.3.1.js"></script>
+<script src="./js/slick.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.animation-slick').slick({
+            lazyLoad: 'ondemand',
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            prevArrow: '#wrapper-main .next',
+            nextArrow: '#wrapper-main .prev',
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    });
+</script>
+
+</html>
